@@ -13,3 +13,4 @@ class User < ApplicationRecord
     validates :age, format: { with: /\A[0-9]+\z/, message: 'は半角数字のみを入力してください' }
   end
 end
+

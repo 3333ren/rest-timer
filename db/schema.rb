@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_25_044600) do
+ActiveRecord::Schema.define(version: 2021_04_29_065150) do
 
   create_table "alarms", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "task", null: false
@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(version: 2021_04_25_044600) do
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "name", null: false
-    t.integer "age", null: false
+    t.integer "age"
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
