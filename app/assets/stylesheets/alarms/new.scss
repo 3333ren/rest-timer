@@ -1,0 +1,66 @@
+.setting {
+  background-image: image-url("desktop.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.setting-back {
+  height: 100%;
+  background: rgba(255,255,255,0.6);
+}
+
+.setting-title {
+  font-size: 6vh;
+  text-align: center;
+  padding-top: 6vh;
+}
+
+.setting-message {
+  font-size: 3vh;
+  padding: 5vh 0 5vh 15vw;
+}
+
+.task-form {
+  display: flex;
+}
+
+.task-text {
+  font-size: 3vh;
+  height: 5vh;
+  width: 30vw;
+  margin-left: 15vw;
+}
+
+.task-button {
+  height: 5vh;
+  width: 10vw;
+  margin-left: 5vw;
+}
+
+.sample-list {
+  margin: 3vh 0 6vh 15vw;
+}
+
+.sample-text {
+  font-size: 3vh;
+  color: gray;
+  padding-top: 1vh;
+}
+
+.my-task-title {
+  padding: 5vh 0 5vh 15vw;
+  font-size: 4vh;
+}
+
+.my-task {
+  display: flex;
+  padding: 0 0 8vh 17vw;
+  font-size: 3vh;
+}
+
+.delete-link {
+  text-decoration: none;
+  color: orange;
+  margin-left: 5vw;
+  border: solid 1px orange;
+}

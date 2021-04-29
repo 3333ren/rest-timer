@@ -1,0 +1,37 @@
+<%= render "shared/header" %>
+<div class="setting">
+  <div class="setting-back">
+    <div class="rest-setting">
+      <h2 class="setting-title">休憩の設定</h2>
+      <p class="setting-message">
+      予め休憩中にやることを決めておきましょう。
+      </p>
+      <div class="task-form">
+        <%= form_with model: @alarm, url: alarms_path, method: :post, local: true do |f| %>
+          <%= render "shared/error_messages", model: f.object %>
+          <%= f.text_area :task, placeholder: "タスクを入力", class: "task-text" %>
+          <%= f.submit "設定する", class: "task-button" %>
+        <% end %>
+      </div>
+    </div>
+    <ul class="sample-list">
+      <li class="sample-text">(例)&thinsp;音楽を聴く</li>
+      <li class="sample-text">&emsp;&emsp;運動(ストレッチ、筋トレetc)</li>
+      <li class="sample-text">&emsp;&emsp;瞑想</li>
+      <li class="sample-text">&emsp;&emsp;仮眠</li>
+    </ul>
+      <h3 class="my-task-title">設定中のタスク </h3>
+      <ul>
+        <% @alarms.each do |alarm| %>
+        <% if alarm.user.id == current_user.id %>
+        <li class="my-task">
+          ・<%= alarm.task %>
+          <%= link_to "削除", alarm_path(alarm.id), method: :delete, class: "delete-link" %>
+        </li>
+        <% end %>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>  
+<%= render "shared/footer" %>

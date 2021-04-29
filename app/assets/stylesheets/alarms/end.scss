@@ -1,0 +1,37 @@
+.timer-end {
+  background-image: image-url("desktop.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.end-back {
+  height: 100%;
+  background: rgba(255,255,255,0.6);
+}
+
+.end-title {
+  font-size: 6vh;
+  text-align: center;
+  padding-top: 6vh;
+}
+
+.end-message-pr {
+  display: flex;
+  justify-content: center;
+}
+
+.end-message {
+  margin-top: 20vh;
+  font-size: 4vh;
+}
+
+.end-top-pr {
+  text-align: center;
+  padding: 20vh 0 5vh 0;
+}
+
+.end-top {
+  text-decoration: none;
+  font-size: 4vh;
+  color: black;
+}

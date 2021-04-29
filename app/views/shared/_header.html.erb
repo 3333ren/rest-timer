@@ -1,0 +1,14 @@
+<header class="header-all">
+  <div class="top-page"><%= link_to "Rest-timer", alarms_path, class: "top-font" %></div> 
+  <div class="header-sign"> 
+    <ul class="header-user">
+      <% if user_signed_in? %>
+      <li><%= link_to current_user.name, "#", class: "sign-char" %></li>
+      <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "sign-char" %></li>
+      <% else %>
+      <li><%= link_to "新規登録", new_user_registration_path, class: "sign-char" %></li>
+      <li><%= link_to "ログイン",  new_user_session_path, class: "sign-char" %></li>
+      <% end %>
+   </ul>
+  </div>
+</header>

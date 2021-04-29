@@ -1,0 +1,65 @@
+<%= render "shared/header" %>
+<div class="timer-start">
+  <h2 class="start-title">
+  タイマー開始 <i class="far fa-clock"></i>
+  </h2>
+  <div class="task-setting">
+    <h3 class="task-title">やることを設定</h3>
+    <select class="task-list">
+      <% @alarms.each do |alarm| %>
+        <% if alarm.user.id == current_user.id %>
+          <option><%= alarm.task %></option>
+        <% end %>
+      <% end %>
+    </select>
+  </div>
+
+  <div class="timer-main">
+    <div class="time-display" id="time-display">00:00</div>
+      <div class="time-list-pr">
+        <select class="time-list" id="time-list">
+          <option value="480">&nbsp;8:00</option>
+          <option value="540">&nbsp;9:00</option>
+          <option value="600">10:00</option>
+          <option value="660">11:00</option>
+          <option value="720">12:00</option>
+          <option value="780">13:00</option>
+          <option value="840">14:00</option>
+          <option value="900">15:00</option>
+        </select>
+      </div>
+      <div class="start-button-pr">
+        <input type="submit" value="スタート" class="btn btn--orange btn--cubic btn--shadow" id="start-button">
+      </div>
+    
+    <p class="timer-news">
+    終了のお知らせ音は自動で消えます。<br>
+    <span class="news-part">※音量設定にご注意ください</span>
+    </p>
+  </div>
+  
+  <%= form_with model: @memo, url: memos_path, method: :post, local: true do |f| %>
+     <ul class="write-memo">
+      <li class="memo-content">
+        <h3 class="good">Goodメモ</h3>
+        <%= f.text_area :good, class:"memo-text", id: "good-text" %>
+        <p class="memo-news">
+          学習時間の良かった気づきを<br>
+          記載しましょう。
+        </p>
+      </li>
+      <li class="memo-content">
+        <h3 class="black">Blackメモ</h3>
+        <%= f.text_area :black, class: "memo-text", id: "black-text" %>
+        <p class="memo-news">
+          学習時間のネガティブな感情を<br>
+          吐き出しておきましょう。<br>
+          (こちらは非公開ですのでご安心ください)
+        </p>
+      </li>
+      <%= f.submit class: "memo-button", id: "memo-button" %>
+    </ul>
+    <% end %>
+  
+</div>
+<%= render "shared/footer"%>

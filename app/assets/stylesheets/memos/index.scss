@@ -1,0 +1,42 @@
+.memo-all {
+  background-image: image-url("desktop.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.memo-back {
+  height: 100%;
+  background: rgba(255,255,255,0.6);
+}
+
+.memo-title {
+  font-size: 6vh;
+  text-align: center;
+  padding: 6vh;
+}
+
+.memo-lists {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.memo-list {
+  width: 30vw;
+  border: 3px solid black;
+  margin-bottom: 5vh;
+  padding: 1vh 1vw;
+}
+
+.memo-user {
+  font-size: 3vh;
+}
+
+.memo-age {
+  font-size: 2vh; 
+}
+
+.memo-content {
+  font-size: 2.5vh;
+  margin-top: 3vh;
+}

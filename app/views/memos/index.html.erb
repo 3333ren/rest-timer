@@ -1,0 +1,26 @@
+<%= render "shared/header" %>
+<div class="memo-all">
+  <div class="memo-back">
+    <div class="share-memo">
+      <h2 class="memo-title">
+      みんなのメモ <i class="fas fa-book"></i>
+      </h2>
+      <ul class="memo-lists">
+      <% @memos.each do |memo| %>
+        <li class="memo-list">
+          <div class="memo-user">
+            <%= memo.user.name %>
+          </div>
+          <div class="memo-age">
+            <%= memo.user.age %>歳
+          </div>
+          <div class="memo-content">
+            <%= memo.good %>
+          </div>
+        </li>
+      <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
+<%= render "shared/footer" %>

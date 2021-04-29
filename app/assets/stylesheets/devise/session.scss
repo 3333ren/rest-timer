@@ -1,0 +1,50 @@
+.session {
+  width: 100vw;
+  background-image: image-url("back.jpeg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  background-color: gray;
+  opacity: 0.8;
+  margin: 20vh 0 20vh 0;
+  padding: 0 10vw 0 10vw;
+}
+
+.login-groups {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login-group {
+  text-align: center;
+  padding-top: 5vh;
+}
+
+.login-title {
+  font-size: 2.5vh;
+}
+
+.login-text-pr {
+  display: flex;
+  justify-content: center;
+  height: 5vh;
+}
+
+.login-text {
+  font-size: 3vh;
+  width: 20vw;
+}
+
+
+.login-button {
+  font-size: 2.5vh;
+  background-color: teal;
+  height: 5vh;
+  width: 12vw;
+  margin: 6vh 0 6vh 0;
+}

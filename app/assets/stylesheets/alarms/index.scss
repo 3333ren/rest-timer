@@ -1,0 +1,93 @@
+.main {
+  background-color: #FBFBFB;
+}
+
+.upper-content {
+  background-image: image-url("alarm.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.upper-caption {
+  font-size: 6vh;
+  padding-left: 5vw;
+}
+
+.upper-message {
+  font-size: 2vh;
+  color: #4D5359;
+  padding: 1.5vh 0 0 7vw;
+}
+
+
+
+.main-content {
+  padding-top: 15vh;
+}
+
+
+.main-caption {
+  font-size: 4vh;
+  color: #FEB95F;
+  text-shadow: black;
+  padding-bottom: 1vh;
+}
+
+.main-message {
+  color: #4D5359;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5vh;
+}
+
+.content {
+  padding-top: 1vh;
+  border-top: solid 1px gray ;
+}
+
+.sub-content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10vh;
+  font-size: 20px;
+}
+
+.link-list {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+}
+
+
+.other-link {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  border: solid 1px #4D5359;
+}
+
+.link-message {
+  font-size: 2.5vh;
+  color: #4D5359;
+}
+
+.timer-pr {
+  text-align: center;
+  padding: 20vh;
+ 
+}
+
+.timer {
+  text-decoration: none;
+  font-size: 6vh;
+  color: #FBFBFB;
+  background-color: #4D5359;
+  padding: 3vh 4vw;
+}

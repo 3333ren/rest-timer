@@ -1,0 +1,16 @@
+<%= render "shared/header" %>
+<div class="timer-end">
+  <div class="end-back">
+    <h2 class="end-title">
+    休憩終了 <i class="fas fa-graduation-cap"></i>
+    </h2>
+    <div class="end-message-pr">  
+      <p class="end-message"><%= @message.content %></p>
+    </div>
+
+    <div class="end-top-pr">
+      <%= link_to "Topページへ", root_path, class: "end-top" %>
+    </div>
+  </div>
+</div>
+<%= render "shared/footer" %>

@@ -1,0 +1,44 @@
+.header-all {
+  width: 100vw;
+  height: 5vh;
+  background-color: #FBFBFB;
+  display: flex;
+  border-bottom: solid 1px #EADEDA;
+}
+
+
+
+.header-sign {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.header-user {
+  font-size: 2.5vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 30vw;
+}
+
+.sign-char {
+  text-decoration: none;
+  color: black;
+}
+
+.top-page {
+  width: 20%;
+  height: 100%;
+  background-color: #D9F7FA;
+  font-size: 3.3vh;
+  text-align: center;
+  text-decoration: none;
+}
+
+.top-font {
+  text-decoration: none;
+  color: #4D5359;
+}

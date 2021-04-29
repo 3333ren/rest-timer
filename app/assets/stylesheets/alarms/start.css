@@ -1,0 +1,108 @@
+.timer-start {
+  background-color: #FBFBFB;
+}
+
+.start-title {
+  font-size: 6vh;
+  text-align: center;
+  padding-top: 6vh;
+}
+
+.task-setting {
+  padding: 10vh 0 2vh 15vw ;
+}
+
+.task-title {
+  font-size: 4vh;
+}
+
+.task-list {
+  height: 6vh;
+  width: 25vw;
+  font-size: 2.5vh;
+}
+
+.timer-main {
+  background-color: #D9F7FA;
+}
+
+.time-display {
+  text-align: center;
+  padding-top: 15vh;
+  font-size: 14vh;
+}
+
+.time-list-pr {
+  text-align: right;
+  padding: 5vh 10vw 0 0;
+}
+
+.time-list {
+  height: 4vh;
+  margin-right: 15vw;
+}
+
+.start-button-pr {
+  text-align: center;
+  padding-top: 10vh;
+}
+
+
+.btn--orange {
+  font-size: 5vh;
+  color: #fff;
+  background-color: #eb6100;
+  border-bottom: 5px solid #b84c00;
+}
+.btn--orange:hover {
+  margin-top: 3px;
+  color: #fff;
+  background: #f56500;
+  border-bottom: 2px solid #b84c00;
+}
+.btn--shadow {
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+}
+
+
+.timer-news {
+  color: gray;
+  text-align: right;
+  margin: 4vh 3vw 0 0;
+}
+
+.news-part {
+  margin-right: 6.5%;
+}
+
+.write-memo {
+  display: flex;
+  justify-content: space-between;
+  padding: 10vh 10vw;
+}
+
+.good {
+  font-size: 3.5vh;
+  margin-bottom: 1.5vh;
+}
+
+.memo-text {
+  width: 30vw;
+  height: 20vh;
+  font-size: 3vh;
+}
+
+.memo-news {
+  font-size: 2vh;
+  color:#4D5359;
+}
+
+.black {
+  font-size: 3.5vh;
+  margin-bottom: 1.5vh;
+}
+
+.memo-button {
+  display: none;
+}

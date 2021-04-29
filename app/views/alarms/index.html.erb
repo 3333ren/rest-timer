@@ -1,0 +1,44 @@
+<%= render "shared/header" %>
+<div class="main">
+  <div class="upper-content">
+    <h1 class="upper-caption">休憩を意識しよう</h1>
+    <p class="upper-message">
+      学習したこと、或いは覚えたことは<br>
+      休憩時間中に長期記憶へと変換されます。<br>
+      休憩を大切に。
+    </p>
+  </div>
+
+  <div class="main-content">
+    <div class="main-message">
+      <h2 class="main-caption">Concept</h2>
+      <p class="main-message">
+      短時間でも一旦勉強を始めることが大切です。<br>
+      ですので学習時間の固定するのではなく、休憩時間の固定を推奨しています。<br>
+      学習などの合間にお使いください。
+      </p>
+    </div>
+    <div class="content">
+      <ul class="sub-content">
+        <li class="link-list">
+          <%= link_to "みんなのメモ", memos_path, class: "other-link" %>
+          <%= image_tag "everyone.memo.png", class: "link-iamge" %>
+          <p class="link-message">
+          他のユーザーのメモを<br>
+          チェックしてみましょう
+          </p>
+        </li>
+        <li class="link-list">
+          <%= link_to "休憩の設定", new_alarm_path, class: "other-link" %>
+          <%= image_tag "rest.setting.png", class: "link-image" %>
+          <p class="link-message">
+          休憩中のタスクを<br>
+          設定しておきましょう
+          </p>
+        </li>
+      </ul>
+      <div class="timer-pr"><%= link_to "タイマー開始ページ", "alarms/start" , class: "timer" %></div>
+    </div>
+  </div>
+</div>
+<%= render "shared/footer" %>

@@ -1,0 +1,49 @@
+.registration {
+  width: 100vw;
+  background-image: image-url("back.jpeg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup {
+  background-color: gray;
+  opacity: 0.8;
+  margin: 20vh 0 20vh 0;
+  padding: 0 10vw 0 10vw;
+}
+
+.form-groups {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  text-align: center;
+  padding-top: 5vh;
+}
+
+.form-title {
+  font-size: 2.5vh;
+}
+
+.form-text-pr {
+  display: flex;
+  justify-content: center;
+  height: 5vh;
+
+}
+
+.form-text {
+  font-size: 3vh;
+  width: 20vw;
+}
+
+.signup-button {
+  font-size: 2.5vh;
+  background-color: teal;
+  height: 5vh;
+  width: 6vw;
+  margin: 6vh 0 6vh 0;
+}

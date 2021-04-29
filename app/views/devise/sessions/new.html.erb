@@ -1,0 +1,27 @@
+<div class="session">
+  <div class="login">
+  <div class='login-flash-message'>
+      <%= flash[:notice] %>
+      <%= flash[:alert] %>
+  </div>
+  <%= form_with model: @user, url: user_session_path, method: :post, local: true do |f| %>
+  <%= render "shared/error_messages", model: f.object %>  
+    <ul class="login-groups">
+      <li class="login-group">
+        <label class="login-title">・メールアドレス<label>
+        <div class="login-text-pr">
+          <%= f.email_field :email, class: "login-text" %>
+        </div>
+      </li>
+      <li class="login-group">
+        <label class="login-title">・パスワード<label>
+        <div class="login-text-pr">
+          <%= f.password_field :password, class: "login-text" %>
+        </div>
+      </li>
+      <%= f.submit "ログイン", class: "login-button" %>
+    </ul>
+  <% end %>
+  </div>
+</div>
+<%= render "shared/footer" %>

@@ -1,0 +1,26 @@
+.footer-all {
+  background-color: #D9F7FA;
+  border-top: solid 1px #4D5359;
+}
+
+.top-link {
+  text-align: center;
+  padding-top: 2vh;
+}
+
+.link-font {
+  text-decoration: none;
+  font-size: 4vh;
+  color: #4D5359;
+}
+ .sub-links {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 4vh;
+ }
+
+ .sub-link {
+   text-decoration: none;
+   color: #4D5359;
+ }
