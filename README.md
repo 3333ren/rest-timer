@@ -1,24 +1,47 @@
-# README
+# テーブル設計
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## users テーブル
 
-Things you may want to cover:
+| Column             | Type    | Options                   |
+| ------------------ |-------- | ------------------------- |
+| email              | string  | null: false, unique: true |
+| encrypted_password | string  | null: false               |
+| name               | string  | null: false               |
+| age                | integer | null: false               |
 
-* Ruby version
+### Association
 
-* System dependencies
+- has_many :alarms
+- has_many :memos
 
-* Configuration
 
-* Database creation
+## alarms テーブル
 
-* Database initialization
+| Column | Type        | Options                        |
+| ------ |------------ | ------------------------------ |
+| task   | string      | null: false                    |
+| user   | references  | null: false, foreign_key: true |
 
-* How to run the test suite
+### Association
 
-* Services (job queues, cache servers, search engines, etc.)
+- belongs_to :user
 
-* Deployment instructions
 
-* ...
+## memos テーブル
+
+| Column  | Type        | Options                        |
+| ------- |------------ | ------------------------------ |
+| good    | string      |                                |
+| black   | string      |                                |
+| user    | references  | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :user
+
+
+## messages テーブル
+
+| Column     | Type        | Options |
+| ---------- |------------ | ------- |
+| content    | string      |         |

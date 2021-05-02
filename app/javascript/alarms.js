@@ -10,7 +10,7 @@ const timeCount = () => {
 
   startButton.addEventListener("click", (e) => {
     e.preventDefault();          
-    let alarmTime = 5;
+    let alarmTime = 10;
     let intervalId = setInterval(function () {
       alarmTime--;
       let minutes = Math.floor(alarmTime / 60).toString().padStart(2, "0");
@@ -23,7 +23,7 @@ const timeCount = () => {
           memoButton.click();
         };
         window.setTimeout(function () {
-          window.location.href="http://localhost:3000/alarms/end"
+          window.location.href=""
         }, 5000);
       };
     }, 1000);

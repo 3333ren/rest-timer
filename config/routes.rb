@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get "alarms/start", to: "alarms#start"
   get "alarms/end", to: "alarms#end"
   resources :memos, only: [:index, :create]
+  resources :messages, only: [:new, :create]
 end
