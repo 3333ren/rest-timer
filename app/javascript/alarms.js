@@ -7,16 +7,16 @@ const timeCount = () => {
   let memoButton = document.getElementById("memo-button");
   
   let finish = () => {
-    let speech = window.speechSynthesis
+    let speech = window.speechSynthesis;
     let endMsg = new SpeechSynthesisUtterance;
     endMsg.volume = 1;
     endMsg.rate = 1;
     endMsg.pitch = 1;
-    endMsg.text = "Break time is over";
+    endMsg.text = "Break time is over Break time is over";
     endMsg.lang = "en-US";
     speech.speak(endMsg);
     endMsg.onend = () => {
-      window.location.href=""
+      window.location.href="";
     }
   }
 
@@ -28,7 +28,7 @@ const timeCount = () => {
 
   startButton.addEventListener("click", (e) => {
     e.preventDefault();          
-    let alarmTime = 10;
+    let alarmTime = timeList.value;
     let intervalId = setInterval( () => {
       alarmTime--;
       let minutes = Math.floor(alarmTime / 60).toString().padStart(2, "0");
@@ -44,4 +44,4 @@ const timeCount = () => {
   });
 };
 
-window.addEventListener("DOMContentLoaded", timeCount)
+window.addEventListener("DOMContentLoaded", timeCount);

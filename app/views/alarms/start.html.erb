@@ -63,3 +63,13 @@
   
 </div>
 <%= render "shared/footer"%>
+
+<script>
+if (window.name != "rel") {
+  location.reload();
+  window.name = "rel";
+} else {
+  window.name = "";
+}
+  
+</script>
