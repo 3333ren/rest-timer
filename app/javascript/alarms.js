@@ -16,7 +16,7 @@ const timeCount = () => {
     endMsg.lang = "en-US";
     speech.speak(endMsg);
     endMsg.onend = () => {
-      window.location.href="";
+      window.location.href="https://rest-timer1.herokuapp.com/alarms/end";
     }
   }
 
