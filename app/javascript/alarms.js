@@ -17,7 +17,7 @@ const timeCount = () => {
     speech.speak(endMsg);
     endMsg.onend = () => {
       window.location.href="https://rest-timer1.herokuapp.com/alarms/end";
-    }
+    };
   }
 
   let memoCheck = () => {
