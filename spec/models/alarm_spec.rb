@@ -20,7 +20,7 @@ RSpec.describe User, type: :model do
         expect(@alarm.errors.full_messages).to include("休憩タスクを入力してください")
       end
 
-      it 'userが紐づいていなければ登録できない' do
+      it 'ユーザーが紐づいていなければ登録できない' do
         @alarm.user = nil
         @alarm.valid?
         expect(@alarm.errors.full_messages).to include('Userを入力してください')
