@@ -4,31 +4,31 @@
    <%= render "shared/error_messages", model: f.object %>
     <ul class="form-groups">
       <li class="form-group">
-        <label class="form-title">・ユーザー名</label>
+        <label class="form-title">ユーザー名</label>
         <div class="form-text-pr">
           <%= f.text_area :name, class: "form-text" %>
         </div>
       </li>
       <li class="form-group">
-        <label class="form-title">・メールアドレス</label>
+        <label class="form-title">メールアドレス</label>
         <div class="form-text-pr">
           <%= f.email_field :email, class: "form-text"%>
         </div>
       </li>
       <li class="form-group">
-        <label class="form-title">・パスワード</label>
+        <label class="form-title">パスワード</label>
         <div class="form-text-pr">
           <%= f.password_field :password, class: "form-text" %>
         </div>
       </li>
       <div class="form-group">
-        <label class="form-title">・パスワード (再確認)</label>
+        <label class="form-title">パスワード (再確認)</label>
         <div class="form-text-pr">
           <%= f.password_field :password_confirmation, class: "form-text" %>
         </div>
       </li>
       <li class="form-group">
-        <label class="form-title">・年齢</label>
+        <label class="form-title">年齢</label>
         <div class="form-text-pr">
           <%= f.text_area :age, class: "form-text" %>
         </div>
